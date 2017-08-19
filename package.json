@@ -4,6 +4,7 @@
   "description": "",
   "directories": {},
   "dependencies": {
+    "http-server": "^0.10.0",
     "pi-gpio": "0.0.8",
     "pubnub": "^4.14.0"
   },
@@ -22,14 +23,7 @@
     "url": "0.11.0"
   },
   "scripts": {
-    "dev": "./node_modules/.bin/gulp",
-    "build:fast": "./node_modules/.bin/gulp build-fast",
-    "build:dev": "./node_modules/.bin/gulp build",
-    "build:stage": "./node_modules/.bin/gulp build --server stage",
-    "build:prod": "./node_modules/.bin/gulp build --server prod",
-    "lint": "eslint app",
-    "test:dev": "karma start",
-    "test": "karma start --single-run"
+    "client": "./node_modules/.bin/http-server -o"
   },
   "repository": {
     "type": "git",
