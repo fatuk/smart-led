@@ -1,0 +1,43 @@
+{
+  "name": "smart_led",
+  "version": "0.0.1",
+  "description": "",
+  "directories": {},
+  "dependencies": {
+    "pi-gpio": "0.0.8"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "6.24.1",
+    "gulp": "3.9.1",
+    "gulp-babel": "6.1.2",
+    "gulp-notify": "2.2.0",
+    "gulp-plumber": "0.6.6",
+    "gulp-rename": "1.2.2",
+    "gulp-scp2": "^0.2.0",
+    "gulp-ssh": "^0.6.0",
+    "gulp-util": "3.0.7",
+    "gulp-watch": "4.2.4",
+    "path": "0.12.7",
+    "url": "0.11.0"
+  },
+  "scripts": {
+    "dev": "./node_modules/.bin/gulp",
+    "build:fast": "./node_modules/.bin/gulp build-fast",
+    "build:dev": "./node_modules/.bin/gulp build",
+    "build:stage": "./node_modules/.bin/gulp build --server stage",
+    "build:prod": "./node_modules/.bin/gulp build --server prod",
+    "lint": "eslint app",
+    "test:dev": "karma start",
+    "test": "karma start --single-run"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "fatuk",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
