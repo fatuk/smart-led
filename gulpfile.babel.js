@@ -17,11 +17,11 @@ gulp.task('default', [
  * Watch
  ******************************/
 gulp.task('watch', () => {
-	gulp.watch(['**/*.js'], ['copy']);
+	gulp.watch(['app/*.js'], ['copy']);
 });
 
 gulp.task('copy', function () {
-	return gulp.src(['app/**/*.js', 'package.json'])
+	return gulp.src(['app/*.js'])
 	.pipe(scp({
 		host: '192.168.0.104',
 		username: 'pi',
