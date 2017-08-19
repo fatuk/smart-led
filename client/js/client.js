@@ -34,23 +34,20 @@ $(function () {
 
 	var $turnOnBtn = $('#turnOnBtn');
 	var $turnOffBtn = $('#turnOffBtn');
+	var $lang = $('#lang');
 
 	$turnOnBtn.click(turnOn);
 	$turnOffBtn.click(turnOff);
 
-
-
-
 	if (annyang) {
 		// Let's define a command.
-		var commands = {
-			'включи': turnOn,
-			'выключи': turnOff
-		};
+        var commands = {
+            'turn on': turnOn,
+            'turn off': turnOff
+        };
+        annyang.setLanguage('en-EN');
 
 		annyang.debug();
-		annyang.setLanguage('ru-RU');
-		// annyang.setLanguage('es-ES');
 		// Add our commands to annyang
 		annyang.addCommands(commands);
 
